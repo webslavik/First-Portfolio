@@ -1,0 +1,49 @@
+.page-wrap
+  position: relative
+  max-width: 100%
+  width: 100%
+  overflow: hidden
+  // background-color: yellow
+
+
+.container
+  width: 100%
+  text-align: center
+  margin: 0 auto
+  // background-color: green
+
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+
+  @media(min-width: em(768))
+    width: rem(640px)
+
+
+.col-small
+  width: calc(100% - 30px)
+  box-sizing: border-box
+  margin: 0 auto
+  padding: 0 10px
+  // background-color: tomato
+
+  @media(min-width: em(480))
+    float: left
+    width: 50%
+
+
+.col-big
+  width: 100%
+  padding: 0 10px
+  // background-color: green
+
+
+// .color-1
+//   background-color: tomato
+//
+// .color-2
+//   background-color: purple

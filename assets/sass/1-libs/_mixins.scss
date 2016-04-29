@@ -1,0 +1,50 @@
+// PX to REM
+//------------------------------------
+// @function calculateRem($size) {
+//   $remSize: $size / 16px;
+//   @return $remSize * 1rem;
+// }
+//
+// @mixin rem($size) {
+//   font-size: $size;
+//   font-size: calculateRem($size);
+// }
+//
+//
+// // PX to EM
+// //------------------------------------
+// @function em($size) {
+//   $remSize: $size / 16px;
+//   @return $remSize * 1em;
+// }
+//
+// @mixin em($size) {
+//   font-size: calculateEm($size);
+// }
+
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+@function rem($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}

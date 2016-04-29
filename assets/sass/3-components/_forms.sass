@@ -1,0 +1,61 @@
+
+.main-form
+  width: calc(100% - 20px)
+  margin: 0 auto
+
+  @media(min-width: em(580))
+    width: 80%
+
+  label
+    display: block
+    width: 100%
+    // margin: 0 auto
+    text-align: left
+
+    span
+      display: block
+      // background-color: green
+
+    input[type="text"],
+    input[type="email"],
+    textarea
+      width: 100%
+      max-width: 100%
+      font-size: em(18)
+      border: 1px solid $grey-lighten
+      padding: 7px 10px
+      border-radius: 3px
+      transition: all 200ms ease-in
+      box-sizing: border-box
+
+
+      &:hover,
+      &:focus
+        box-shadow: 0 2px 10px rgba(0,0,0, 0.3)
+
+    input[type="text"],
+    input[type="email"]
+      margin-bottom: 20px
+
+    textarea
+      display: block
+      height: 150px
+      resize: none
+
+  .button-main
+    margin-top: 30px
+    padding: 5px 30px
+    font-size: em(22)
+    font-weight: 300
+    background-color: $green
+    color: $white
+    text-transform: uppercase
+    border: none
+    border-radius: 20px
+    transition: all 200ms ease-in
+
+    &:hover,
+    &:active,
+    &:focus
+      color: $white
+      background-color: darken($green, 4%)

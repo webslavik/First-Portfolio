@@ -1,0 +1,26 @@
+.top-background
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  background-color: $green
+  height: 580px
+  overflow: hidden
+
+  &:after
+    content: ''
+    display: block
+    width: 8000px
+    height: 400px
+    position: absolute
+    top: 100%
+    margin-left: -4000px
+    transform: rotate(-6deg)
+    background-color: $white
+
+
+  @media(min-width: em(480))
+    height: 455px
+
+    &:after
+        transform: rotate(-4deg)

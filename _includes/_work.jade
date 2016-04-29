@@ -1,0 +1,30 @@
+mixin work-element(link,img,title, descr)
+  .col-small
+    a(href="#{link}").work-element
+      .work-img
+        //- DON'T HAVE IMG :(
+        //- img(src="assets/img/#{img}", alt="")
+        span Oops, coming soon...
+      
+      .descr
+        h4  #{title}
+        p.desctiption #{descr}
+
+section#work
+  
+  .container
+    
+    h2 Work
+    
+    +work-element('#', 'test.jp', 'Project Name', 'Short description of the project')
+    
+    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    
+    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    
+    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    
+    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    
+    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    

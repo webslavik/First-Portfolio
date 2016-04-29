@@ -1,0 +1,64 @@
+#skills
+  padding: em(60) 0
+  background-color: $orange
+
+  h2
+    color: $white
+
+    &:after
+      background-color: $white
+
+
+.skills-wrap
+  margin-bottom: 20px
+
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+
+  @media(min-width: em(360)) and (max-width: em(480))
+    margin-left: 15%
+
+.skill-item
+  margin-bottom: 15px
+  text-align: left
+
+
+.skills-progress-bar
+  span
+    display: inline-block
+    width: 19px
+    height: 19px
+    margin-right: 7px
+    border-radius: 50%
+    background-color: $orange-dark
+
+    &.white
+      background-color: $white
+
+    @media(min-width: em(480)) and (max-width: em(580))
+      width: 15px
+      height: 15px
+
+
+.skills-paragraph
+  font-size: em(22)
+  color: $white
+  font-weight: 300
+  margin-bottom: 30px
+
+.skills-list
+  box-sizing: border-box
+  li
+    display: inline-block
+    font-size: em(24)
+    font-weight: 300
+    margin-right: 10px
+    margin-bottom: 10px
+    padding: 5px 10px
+    color: $white
+    background-color: $orange-dark

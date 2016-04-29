@@ -1,0 +1,52 @@
+//- Наши массивы
+- var skillsName = ['HTML5', 'CSS3', 'JavaScript', 'AngularJS']
+- var skillCount = ['8', '8', '5', '0']
+
+
+
+mixin skill-item()
+  - for(i = 0; i < skillsName.length; i++) { //- цикл длиною в skillsName
+    .skill-item.col-small
+  
+      //- присваиваем имя используя элементы массива skillsName
+      span.big #{skillsName[i]} 
+      .skills-progress-bar
+        
+        - var count_1 = 10;
+        - var count_2 = skillCount[i] //- 
+        - var res = count_1 - count_2 //- например: в первой итерации 10 - 8
+        
+        //- этот цикл рисует 'белые' кружочки
+        - for(j = 0; j < count_2; j++) {
+          span.white
+        - }
+        
+        //- этот цикл 'темные'
+        - for(k = 0; k < res; k++) {
+          span
+        - }
+        
+  - }
+  
+    
+section#skills
+
+  .container
+    
+    h2 Skills
+    
+    .skills-wrap
+      +skill-item()
+    
+    p.skills-paragraph and other tools which I use: 
+    
+    
+    - var otherSkills = ['Sass', 'jQuery', 'Jade', 'Bourbon', 'Foundation', 'Bootstrap', 'Gulp', 'Illustrator', 'Photoshop', 'Git']
+    
+    ul.skills-list.col-big
+      - for(i = 0; i < otherSkills.length; i++) {
+        li= otherSkills[i]
+      -}
+    
+      
+      

@@ -1,0 +1,42 @@
+#work
+  padding: 80px 0 60px
+
+  .col-small
+    margin-bottom: 20px
+
+  div:nth-of-type(5),
+  div:nth-of-type(6)
+    margin-bottom: 0
+
+.work-element
+  display: block
+  text-align: left
+  border: 1px solid #c9c9c9
+  border-radius: 5px
+  transition: all 200ms ease-in
+
+  &:hover
+    box-shadow: 0 0 30px rgba(0,0,0, .3)
+
+  .work-img
+    position: relative
+    padding: 5px
+    border-bottom: 1px solid #c9c9c9
+    height: 180px
+
+    background-color: #95a5a6
+
+    img
+      display: block
+
+    // DON'T HAVE IMG :'(
+    span
+      position: absolute
+      top: 50%
+      left: 20px
+      transform: translateY(-50%)
+      font-size: em(24)
+      color: $white
+
+  .descr
+    padding: 5px 10px

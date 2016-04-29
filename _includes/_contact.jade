@@ -1,0 +1,23 @@
+.section#contact
+
+  .container
+    
+    h2 Contact
+    
+    p Write me a few words:
+    
+    form(action="https://formspree.io/nogamegolife@gmail.com" method='POST' target='_blank').main-form.col-big
+      label
+        span.small 
+        input(type="text" placeholder='...' name='name')
+        
+      label
+        span.small Email
+        input(type="email" placeholder='...' name='_replayto')
+        
+      label
+        span.small Message
+        textarea(placeholder='...' name='message')
+        
+      input(type="submit" value='send').button-main
+      
