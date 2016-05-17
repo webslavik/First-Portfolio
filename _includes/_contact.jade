@@ -6,10 +6,10 @@
     
     p Write me a few words:
     
-    form(action="https://formspree.io/nogamegolife@gmail.com" method='POST' target='_blank').main-form.col-big
+    form(id='form' action="https://formspree.io/nogamegolife@gmail.com" method='POST' target='_blank').main-form.col-big
       label
-        span.small 
-        input(type="text" placeholder='...' name='name')
+        span.small Name
+        input(class='error' type="text" placeholder='...' name='name')
         
       label
         span.small Email
@@ -20,4 +20,5 @@
         textarea(placeholder='...' name='message')
         
       input(type="submit" value='send').button-main
+      
       

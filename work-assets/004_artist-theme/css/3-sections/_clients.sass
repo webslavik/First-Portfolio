@@ -1,0 +1,165 @@
+/*-----------------------------------------------------------------
+	*** CLIENTS ***
+	---------------------------------------------------------------*/
+
+
+.clients
+	position: relative
+
+
+.clients-belt
+	width: 100%
+	position: relative
+
+.client-unit
+	max-width: 700px
+	margin: 0 0 50px -350px
+	+position(absolute, 0px null null 50%)
+	+clearfix
+	display: none
+	overflow: hidden
+
+	&.active-client
+		+display(flex)
+		@extend %animation
+		overflow: hidden
+
+	.client-foto
+		max-width: 200px
+		float: left
+		text-align: center
+
+		.client-face
+			+size(128px)
+			margin: 0 auto 10px
+			border-radius: 50%
+
+		.name
+			font-size: 14px
+			color: $color-font
+			text-transform: uppercase
+
+		.post
+			font-size: 12px
+			color: $color-font_plus
+
+
+
+	.client-content
+		position: relative
+		max-width: 450px
+		float: right
+		margin-left: 50px
+		font-size: 18px
+		font-weight: 300
+		color: $color-font
+		line-height: 36px
+
+
+		.client-quote-mark
+			+position(absolute, -20px null null -14px)
+			+size(60px)
+			z-index: -1
+
+			path
+				fill: $color-quotes
+
+		strong
+			font-weight: bold
+
+
+.clients-logos
+	position: relative
+	max-width: 750px
+	margin: 380px auto 100px
+	+display(flex)
+	+align-items(flex-end)
+	+justify-content(space-around)
+
+	.client-logo
+		cursor: pointer
+		margin: 0 20px
+		padding-bottom: 10px
+		border-bottom: 4px solid transparent
+		opacity: 0.5
+
+		&.active-client
+			border-bottom: 4px solid $color-brown_prime
+			opacity: 1
+
+
+.client-control
+	+position(absolute, 0px 0px 0px 0px)
+
+	svg
+		+size(40px)
+		fill: $color-brown_prime
+
+	.control-next
+		+position(absolute, 50% 10px null null)
+		cursor: pointer
+
+
+	.control-prev
+		// @extend .control-next
+		+position(absolute, 50% null null 10px)
+		cursor: pointer
+		// left: 10px
+
+
+.clients-mobile-nav
+	display: none
+	text-align: center
+	margin-bottom: 35px
+
+	span
+		cursor: pointer
+		display: inline-block
+		+size(16px)
+		border: 3px solid $color-bg_second
+		border-radius: 50%
+		margin: 0 10px
+
+		&.active-client
+			border-color: $color-brown_prime
+
+
+
+@media (max-width: 800px)
+	.client-control
+		display: none
+
+	.clients-belt
+
+		.client-unit.active-client
+			display: block
+			position: relative
+			margin-left: 0
+			left: auto
+
+			.client-foto
+				float: none
+				margin: 0 auto 20px
+
+			.client-content
+				max-width: 400px
+				float: none
+				margin: 0 auto
+				padding: 0 20px
+
+				.client-quote-mark
+					left: 15px
+
+	.clients-logos
+		display: none
+		// Видимые логотипы
+		// +flex-wrap(wrap)
+		// +align-items(center)
+		// +flex-direction(column)
+		// margin: 0 0 20px 0
+		//
+		// .client-logo
+		// 	margin-bottom: 10px
+
+	.clients-mobile-nav
+		display: block
