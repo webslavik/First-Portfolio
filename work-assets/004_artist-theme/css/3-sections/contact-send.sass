@@ -1,0 +1,82 @@
+/*-----------------------------------------------------------------
+	*** CONTACT SEND ***
+	---------------------------------------------------------------*/
+
+.main-form
+	width: 450px
+	margin: 0 auto 100px
+	+clearfix
+
+	input, textarea
+		width: 100%
+		padding: 5px
+		border: 3px solid $color-brown_prime
+
+	textarea
+		float: left
+		height: 10em
+		margin-bottom: 20px
+		resize: none
+
+	span
+		font-size: em(14px)
+		color: $color-font_plus
+
+	
+	.f-1
+		float: left
+		width: 48%
+		margin-bottom: 20px
+
+	.f-2
+		float: right
+		width: 48%
+		margin-bottom: 20px
+
+	
+	.form-button
+		float: right
+		// display: inline-block
+		width: 33%
+		height: 50px
+		font-size: em(24px)
+		border: none
+		background-color: $color-brown_prime
+		color: #fff
+		cursor: pointer
+		text-transform: uppercase
+		+transition
+
+		&:hover
+			background-color: darken($color-brown_prime,10%)
+
+
+@media (max-width: 490px)
+
+	.main-form
+		width: 95%
+		+display(flex)
+		+flex-direction(column)
+		+justify-content(space-around)
+		+align-items(center)
+
+		span
+			font-size: em(16px)
+
+		.f-1, .f-2
+			width: 100%
+	
+		input
+			padding: 10px
+			font-size: em(20px)
+
+		textarea
+			font-size: em(24px)
+
+		.form-button
+			width: 50%
+			height: 60px
+			// font-size: 
+			
+
+

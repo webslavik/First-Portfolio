@@ -1,0 +1,115 @@
+/*-----------------------------------------------------------------
+	*** ABOUT ***
+	---------------------------------------------------------------*/
+
+
+
+
+.about-pic
+	max-width: 800px
+	margin: 0 auto 60px
+	+clearfix
+	+display(flex)
+	+justify-content(space-between)
+	+align-items(center)
+
+	.face
+		+size(200px)
+		border-radius: 50%
+		background: url(../img/travitar.jpg) no-repeat
+		order: 3
+
+	[class^="icon-"]
+		+size(100px)
+		background-color: $color-bg_second
+		border-radius: 50%
+		fill: lighten($color-brown-prime, 10%)
+
+		&.icon-pencil
+			order: 1
+		&.icon-mouse
+			order: 2
+		&.icon-web
+			order: 4
+		&.icon-video
+			order: 5
+
+@media (max-width: 650px) 
+	.about-pic
+		display: block
+		text-align: center
+
+		.face
+			display: block
+			margin: 0 auto 20px
+	
+		[class^="icon-"]
+			display: inline-block
+			margin: 0 5px
+
+
+@media (max-width: 480px)
+	.about-pic
+
+		.face
+			+size(150px)
+			background-size: contain
+
+		[class^="icon-"]
+			+size(60px)
+
+
+.descr
+	width: 620px
+	margin: 0 auto 150px
+	font-size: em(24px)
+	font-weight: 300
+	line-height: 36px
+	color: $color-font
+	text-align: center
+
+	span
+		font-weight: bold
+
+
+
+.skills
+	width: 700px
+	margin: 0 auto 100px
+	+clearfix
+
+	.wrap-skill
+		width: 350px
+		float: left
+		margin-bottom: 30px
+
+
+		.progress-bar
+			width: 300px
+			background-color: #e5eaee
+
+			.progress-bar-fill
+				display: block
+				width: 80%
+				height: 4px
+				background-color: $color-brown-prime
+
+
+@media screen and (max-width: 680px)
+	.descr
+		width: 90%
+		margin-bottom: 75px
+	
+	.skills
+		width: 90%
+		margin-bottom: 50px
+
+		.wrap-skill
+			float: none
+			margin: 0 auto 20px
+
+
+		
+
+// .descr
+	// 	width: 90%

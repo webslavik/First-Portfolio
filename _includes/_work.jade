@@ -2,9 +2,7 @@ mixin work-element(link,img,title, descr)
   .col-small
     a(href="#{link}").work-element
       .work-img
-        //- DON'T HAVE IMG :(
-        //- img(src="assets/img/#{img}", alt="")
-        span Oops, coming soon...
+        img(src="assets/img/#{img}", alt="")
       
       .descr
         h4  #{title}
@@ -16,15 +14,15 @@ section#work
     
     h2 Work
     
-    +work-element('#', 'test.jp', 'Project Name', 'Short description of the project')
+    +work-element('/work-assets/001_landing-page/index.html', 'landing-page.jpg', 'Landing Page', 'First practice work.')
     
-    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    +work-element('/work-assets/002_folio-page/index.html', 'folio-page.jpg', '.Folio', 'Use Foundation 6 grid mixins.')
     
-    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    +work-element('/work-assets/003_ovk-page/index.html', 'ovk.jpg', 'OVK', 'More practice!')
     
-    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    +work-element('/work-assets/004_artist-theme/index.html', 'artist-theme.jpg', 'Artists-Theme', 'Awesome work with Travis.')
     
-    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    +work-element('#', 'bg-project.jpg', 'Project Name', 'Short description of the project')
     
-    +work-element('#', 'test.jpg', 'Project Name', 'Short description of the project')
+    +work-element('#', 'bg-project.jpg', 'Project Name', 'Short description of the project')
     
