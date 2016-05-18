@@ -42,8 +42,32 @@
       height: 150px
       resize: none
 
+
+  // ERROR STYLE
+  //---------------------------------------
+  // for SPAN
+  span.errorMsg
+    margin: 2px 0 4px
+    color: $orange
+
+    &.error-hide
+      visibility: hidden
+
+  // for FORM
+  span.error-form
+    display: inline-block
+    color: $orange
+
+    &.error-hide
+      visibility: hidden
+
+
+
+  // button style
+  //-----------------------------------------
   .button-main
-    margin-top: 30px
+    display: block
+    margin: 10px auto 0
     padding: 5px 30px
     font-size: em(22)
     font-weight: 300
