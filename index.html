@@ -103,16 +103,17 @@
       <div class="container">
         <h2>Contact</h2>
         <p>Write me a few words:</p>
-        <form id="form" action="https://formspree.io/nogamegolife@gmail.com" method="POST" target="_blank" class="main-form col-big">
+        <!--action="https://formspree.io/nogamegolife@gmail.com"-->
+        <form id="form" method="POST" target="_blank" class="main-form col-big">
           <label><span class="small">Name</span>
-            <input type="text" placeholder="..." name="name" class="error"/>
+            <input id="formName" type="text" placeholder="..." name="name" data-error-id="error-name"/><span id="error-name" class="errorMsg error-hide">Please enter your name...</span>
           </label>
           <label><span class="small">Email</span>
-            <input type="email" placeholder="..." name="_replayto"/>
+            <input id="formEmail" type="text" placeholder="..." name="_replayto" data-error-id="error-email"/><span id="error-email" class="errorMsg error-hide">Please enter your email...</span>
           </label>
           <label><span class="small">Message</span>
-            <textarea placeholder="..." name="message"></textarea>
-          </label>
+            <textarea id="formArea" placeholder="..." name="message" data-error-id="error-area"></textarea><span id="error-area" class="errorMsg error-hide">Please write some words...</span>
+          </label><span class="error-form error-hide">Please fill all fields...</span>
           <input type="submit" value="send" class="button-main"/>
         </form>
       </div>

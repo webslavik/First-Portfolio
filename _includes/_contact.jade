@@ -6,19 +6,27 @@
     
     p Write me a few words:
     
-    form(id='form' action="https://formspree.io/nogamegolife@gmail.com" method='POST' target='_blank').main-form.col-big
+    
+    //action="https://formspree.io/nogamegolife@gmail.com"
+    form(id='form'  method='POST' target='_blank').main-form.col-big
       label
         span.small Name
-        input(class='error' type="text" placeholder='...' name='name')
+        input(id='formName' type="text" placeholder='...' name='name' data-error-id='error-name')
+        span#error-name.errorMsg.error-hide Please enter your name...
         
       label
         span.small Email
-        input(type="email" placeholder='...' name='_replayto')
+        input(id='formEmail' type="text" placeholder='...' name='_replayto' data-error-id='error-email')
+        span#error-email.errorMsg.error-hide Please enter your email...
         
       label
         span.small Message
-        textarea(placeholder='...' name='message')
+        textarea(id='formArea' placeholder='...' name='message' data-error-id='error-area')
+        span#error-area.errorMsg.error-hide Please write some words...
+        
+      span.error-form.error-hide Please fill all fields...
         
       input(type="submit" value='send').button-main
+      
       
       
