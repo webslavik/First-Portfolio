@@ -2,7 +2,7 @@ mixin work-element(link,img,title, descr)
   .col-small
     a(href="#{link}").work-element
       .work-img
-        img(src="assets/img/#{img}", alt="")
+        .img(style='background-image: url(/assets/img/#{img})')
       
       .descr
         h4  #{title}
@@ -14,6 +14,8 @@ section#work
     
     h2 Work
     
+    +work-element('http://webslavik.github.io/Origami-Page/', 'bg-origami.jpg', 'Origami', 'I like Parallax!')
+    
     +work-element('/work-assets/001_landing-page/index.html', 'landing-page.jpg', 'Landing Page', 'First practice work.')
     
     +work-element('/work-assets/002_folio-page/index.html', 'folio-page.jpg', '.Folio', 'Use Foundation 6 grid mixins.')
@@ -23,6 +25,4 @@ section#work
     +work-element('/work-assets/004_artist-theme/index.html', 'artist-theme.jpg', 'Artists-Theme', 'Awesome work with Travis.')
     
     +work-element('#', 'bg-project.jpg', 'Project Name', 'Short description of the project')
-    
-    +work-element('#', 'bg-project.jpg', 'Project Name', 'Short description of the project')
-    
+  
