@@ -2,7 +2,41 @@
   padding: 40px 0
   background-color: $grey
 
+.copy
+  text-align: center
+
   p
     color: darken($white, 15%)
     font-weight: 300
     font-size: em(16)
+
+.social
+  margin-bottom: 10px
+  text-align: center
+
+  li
+    display: inline-block
+    margin: 0 8px
+
+    &:hover svg
+      fill: $white
+
+  svg
+    width: 32px
+    height: 32px
+    fill: $grey-lighten
+    transition: all 180ms ease-in-out
+
+    @media(min-width: em(768))
+      width: 24px
+      height: 24px
+
+
+@media(min-width: em(480))
+  .copy
+    margin-top: 5px
+    text-align: left
+
+  .social
+    text-align: right
+    float: right
