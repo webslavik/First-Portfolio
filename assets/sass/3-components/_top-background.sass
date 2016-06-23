@@ -4,7 +4,7 @@
   left: 0
   width: 100%
   background-color: $green
-  height: 580px
+  height: 480px
   overflow: hidden
 
   &:after
@@ -24,3 +24,12 @@
 
     &:after
         transform: rotate(-4deg)
+
+  @media(min-width: em(530))
+    height: 410px
+
+  @media(min-width: em(900))
+    height: 430px
+
+  @media(min-width: em(1250))
+    height: 450px

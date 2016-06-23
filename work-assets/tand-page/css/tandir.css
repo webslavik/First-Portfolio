@@ -1,0 +1,446 @@
+@font-face {
+	font-family: 'PFSquareSansPro';
+	font-weight: 100;
+	src: url(../fonts/PFSquareSansPro-Thin.ttf);
+}
+
+@font-face {
+	font-family: 'PFSquareSansPro';
+	font-weight: 300;
+	src: url(../fonts/PFSquareSansPro-Light.ttf);
+}
+
+@font-face {
+	font-family: 'PFSquareSansPro';
+	font-weight: 600;
+	src: url(../fonts/PFSquareSansPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'PFSquareSansPro';
+	font-weight: 700;
+	src: url(../fonts/PFSquareSansPro-Medium.ttf);
+}
+@font-face {
+	font-family: 'PFSquareSansPro';
+	font-weight: 800;
+	src: url(../fonts/PFSquareSansPro-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'PFSquareSansPro';
+	font-weight: 900;
+	src: url(../fonts/PFSquareSansPro-XBlack.ttf);
+}
+
+@font-face {
+	font-family: 'PFSquareSansPro';
+	font-style: italic;
+	src: url(../fonts/PFSquareSansPro-Italic.ttf);
+}
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box ;
+	-moz-box-sizing: border-box ;
+	-ms-box-sizing: border-box ;
+	-o-box-sizing: border-box ;
+	box-sizing: border-box ;
+}
+header, footer, nav, section, article {
+	display: block;
+}
+
+a {
+	cursor: pointer;
+}
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+body {
+	font: 1em/1.5em PFSquareSansPro, sans-serif;	
+}
+.container {
+	background: #ddd;
+}
+.title1 {	
+	text-align: center;
+	padding: 10px 0 0;
+	font-size: 2.2em;
+}
+.foto4 {
+	width: 100%;
+	height: auto;
+	margin: 10px 0 0;
+}
+.price {
+	font-size: 1.8em;
+	text-align: center;
+	margin: 10px 0 0;
+	font-weight: normal;
+}
+.price span {
+	color: red;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.but {
+  background: #ff402c none repeat scroll 0 0;
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;  
+  text-align: center;
+  text-transform: uppercase;
+  width: 210px;
+  text-decoration: none;
+  margin: 30px auto 0;
+}
+a.but:hover {
+	color: #000;
+}
+.title2 {
+	text-align: center;
+	font-size: 1.2em;
+	margin: 30px 0 0;
+}
+.osnsv {
+	margin: 10px 0 0;
+	font-size: 1em;	
+}
+.greyt {
+	color: grey;
+	margin-left: 10px;
+}
+.blackt {
+	color: #000;
+	margin-left: 10px;
+}
+.ops {
+	text-align: center;
+	font-size: 1em;
+	margin: 30px 0 0;
+	font-weight: bold;
+}
+.title3 {
+	text-align: center;
+	font-size: 2.2em;
+	margin: 20px 0 0;
+}
+.title4 {
+	margin: 2px 0 0 20px;
+	font-size: 1em;
+}
+.text1 {
+	margin: 20px 0 0 20px;
+	font-size: 1em;
+}
+section.dostava .dost {
+  font-size: 1em;
+  font-weight: bold;
+}
+.text2 {
+	margin: 20px 0 0 20px;	
+}
+section.dostava .text3 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 37px 0 0 20px;
+}
+section.dostava .text4 {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0 0 0 20px;
+}
+
+	@media secret and (min-width: 320px) {
+
+  }
+	@media screen and (min-width: 550px) {
+	
+	}
+	@media screen and (min-width: 655px) {
+		.container {
+			width: 90%;
+			background: #ddd;
+		}
+			header {
+				width: 32.5%;
+				float: left;
+			}
+				header div {
+					width: 80%;
+					margin: 20px auto 0;
+				}
+				header h1 {
+					text-align: center;
+					font-size: 1.5em;
+					margin: 20px 0 0;
+				}
+				header img {
+					width: 100%;
+					height: auto;
+				}
+			section.opisan {
+				width: 40%;
+				float: left;
+			}
+				section.opisan .ops {
+					text-align: left;
+					margin-left: 15px;
+					font-size: 0.9em;
+				}
+				section.opisan .title3 {
+					text-align: left;
+					margin-left: 15px;
+					font-size: 1.5em;
+				}
+				section.opisan .title4 {
+					font-size: 1em;
+				}
+				section.opisan .text1 {
+					margin: 10px 0 0 15px;
+					line-height: 20px;
+				}
+				section.opisan .text2 {
+					margin: 10px 0 0 15px;
+					font-size: 1em;
+				}
+				section.opisan .title2 {
+					margin: 20px 0 0 15px;
+					text-align: left;
+					font-size: 1em;
+				}
+				section.opisan .osnsv {
+					margin: 0 0 0 7px;				
+				}
+				section.opisan .osnsv p{
+					font-size: 1em;
+					line-height: 17px;				
+				}
+			section.dostava {
+				width: 27.5%;
+				float: left;
+			}
+				section.dostava .price {
+					margin: 30px 0 0;
+				}
+				section.dostava .text1 {
+					section.dostava .text1 {
+  margin: 18px 0 0 20px;
+}
+				}
+				section.dostava .text2 {
+					margin: 10px 0 0 20px;
+					line-height: 20px;
+					font-weight: normal;
+					font-size: 1em;
+				}
+				section.dostava .text3 {
+					font-weight: bold;
+					font-size: 1em;
+					margin: 37px 0 0 20px;
+				}
+				section.dostava .dost {
+					font-weight: bold;
+					font-size: 1em;
+				}
+				section.dostava .text4 {
+					font-size: 1em;
+			    font-weight: normal;
+			    line-height: 20px;
+			    margin: 0px 0 0 20px;
+				}
+	}
+	@media screen and (min-width: 700px) {
+		.container {
+			width: 90%;
+			background: #ddd;
+		}
+			header {
+				width: 32.5%;
+				float: left;
+			}
+				header div {
+					width: 80%;
+					margin: 20px auto 0;
+				}
+				header h1 {
+					text-align: center;
+					font-size: 1.5em;
+					margin: 20px 0 0;
+				}
+				header img {
+					width: 100%;
+					height: auto;
+				}
+			section.opisan {
+				width: 40%;
+				float: left;
+			}
+				section.opisan .ops {
+					text-align: left;
+					margin-left: 15px;
+					font-size: 0.9em;
+				}
+				section.opisan .title3 {
+					text-align: left;
+					margin-left: 15px;
+					font-size: 1.5em;
+				}
+				section.opisan .title4 {
+					font-size: 1em;
+				}
+				section.opisan .text1 {
+					margin: 10px 0 0 15px;
+					line-height: 20px;
+				}
+				section.opisan .text2 {
+					margin: 10px 0 0 15px;
+					font-size: 1em;
+				}
+				section.opisan .title2 {
+					margin: 20px 0 0 15px;
+					text-align: left;
+					font-size: 1em;
+				}
+				section.opisan .osnsv {
+					margin: 0 0 0 7px;				
+				}
+				section.opisan .osnsv p{
+					font-size: 1em;
+					line-height: 17px;				
+				}
+			section.dostava {
+				width: 27.5%;
+				float: left;
+			}
+				section.dostava .price {
+					margin: 30px 0 0;
+				}
+				section.dostava .text1 {
+					section.dostava .text1 {
+  margin: 18px 0 0 20px;
+}
+				}
+				section.dostava .text2 {
+					margin: 10px 0 0 20px;
+					line-height: 20px;
+					font-weight: normal;
+					font-size: 1em;
+				}
+				section.dostava .text3 {
+					font-weight: bold;
+					font-size: 1em;
+					margin: 37px 0 0 20px;
+				}
+				section.dostava .dost {
+					font-weight: bold;
+					font-size: 1em;
+				}
+				section.dostava .text4 {
+					font-size: 1em;
+			    font-weight: normal;
+			    line-height: 20px;
+			    margin: 0px 0 0 20px;
+				}
+	}
+	@media screen and (min-width: 1000px) {
+		.container {
+			width: 90%;
+			background: #ddd;
+		}
+			header {
+				width: 32.5%;
+				float: left;
+			}
+				header div {
+					width: 80%;
+					margin: 20px auto 0;
+				}
+				header h1 {
+					text-align: center;
+					font-size: 1.5em;
+					margin: 20px 0 0;
+				}
+				header img {
+					width: 100%;
+					height: auto;
+				}
+			section.opisan {
+				width: 40%;
+				float: left;
+			}
+				section.opisan .ops {
+					text-align: left;
+					margin-left: 15px;
+					font-size: 0.9em;
+				}
+				section.opisan .title3 {
+					text-align: left;
+					margin-left: 15px;
+					font-size: 1.5em;
+				}
+				section.opisan .title4 {
+					font-size: 1em;
+				}
+				section.opisan .text1 {
+					margin: 10px 0 0 15px;
+					line-height: 20px;
+				}
+				section.opisan .text2 {
+					margin: 10px 0 0 15px;
+					font-size: 1em;
+				}
+				section.opisan .title2 {
+					margin: 20px 0 0 15px;
+					text-align: left;
+					font-size: 1em;
+				}
+				section.opisan .osnsv {
+					margin: 0 0 0 7px;				
+				}
+				section.opisan .osnsv p{
+					font-size: 1em;
+					line-height: 17px;				
+				}
+			section.dostava {
+				width: 27.5%;
+				float: left;
+			}
+				section.dostava .price {
+					margin: 30px 0 0;
+				}
+				section.dostava .text1 {
+					section.dostava .text1 {
+  margin: 18px 0 0 20px;
+}
+				}
+				section.dostava .text2 {
+					margin: 10px 0 0 20px;
+					line-height: 20px;
+					font-weight: normal;
+					font-size: 1em;
+				}
+				section.dostava .text3 {
+					font-weight: bold;
+					font-size: 1em;
+					margin: 37px 0 0 20px;
+				}
+				section.dostava .dost {
+					font-weight: bold;
+					font-size: 1em;
+				}
+				section.dostava .text4 {
+					font-size: 1em;
+			    font-weight: normal;
+			    line-height: 20px;
+			    margin: 0px 0 0 20px;
+				}
+	}

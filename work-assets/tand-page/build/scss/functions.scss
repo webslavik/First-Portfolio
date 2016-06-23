@@ -1,0 +1,44 @@
+@mixin min($size) {
+    @media screen and (min-width: $size+px) { @content; }
+}
+
+@mixin between($size1,$size2) {
+    @media screen and (min-width: $size1+px) and (max-width: $size2+px) { @content; }
+}
+
+@mixin max($size) {
+    @media screen and (max-width: $size+px) { @content; }
+}
+
+%clearfix:after {
+    content: " ";
+    font-size: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+%just {
+  text-align: justify;
+  line-height: 0;
+  &>* {
+    display: inline-block;
+    line-height: 1;
+  }
+  &:after {
+    content: ' ';
+    font-size: 0;
+    display: inline-block;
+    height: 0;
+    width: 100%;
+  }
+}
+
+%table_just {
+  display: table;
+  width: 100%;
+  &>* {
+    display: table-cell;
+  }
+}
